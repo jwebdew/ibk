@@ -1,0 +1,288 @@
+@charset "utf-8";
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 강원교육튼튼체 */
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+.theme {
+    margin: 100px 0;
+}
+
+.theme .inner {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.theme .inner h3 {
+    font-size: 60px;
+    text-align: center;
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.theme .inner .tab_menu {
+    display: flex;
+    justify-content: center;
+}
+
+.theme .inner .tab_menu li {
+    font-size: 45px;
+    margin: 50px 10px 0;
+    color: #b4b4b4;
+    position: relative;
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.theme .inner .tab_menu li.on {
+    color: #333;
+}
+
+.theme .inner .tab_menu li.on::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+}
+
+.theme .inner .tabs {
+    margin-top: 50px;
+}
+
+.theme .inner .tabs .tab_cont {
+    display: none;
+    justify-content: space-between;
+}
+
+.theme .inner .tabs .tab_cont.on {
+    display: flex;
+}
+
+.theme .inner .tabs .tab_cont .item {
+    width: 23%;
+}
+
+.theme .inner .tabs .tab_cont .item figure {}
+
+.theme .inner .tabs .tab_cont .item figure img {
+    height: 400px;
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.theme .inner .tabs .tab_cont .item>div h4 {
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 20px 0 10px;
+    /* 말줄임표... */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.theme .inner .tabs .tab_cont .item>div p {
+    line-height: 1.4;
+    margin-bottom: 20px;
+    /* 말줄임표... */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+
+/* magazine */
+.magazine {
+    margin: 100px 0;
+    height: 80vh;
+    background: url('../img/visual1.jpg') center center / cover no-repeat;
+    color: #fff;
+    position: relative;
+}
+
+.magazine .magazine_bg>div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.magazine .magazine_bg>.bg1 {
+    background: url('../img/20220929175407419lebunpoteiasaaj.jpg') center center / cover no-repeat;
+}
+
+.magazine .magazine_bg>.bg2 {
+    background: url('../img/20220929175728610svxlsxntqcghlaa.jpg') center center / cover no-repeat;
+}
+
+.magazine .magazine_bg>.bg3 {
+    background: url('../img/20221020160204231qnbozogekysapwm.jpg') center center / cover no-repeat;
+}
+
+.magazine .inner {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    z-index: 9;
+}
+
+.magazine .inner .title {
+    background-color: rgba(0, 0, 0, .7);
+    width: 25%;
+    height: 100%;
+    padding: 50px;
+    border-right: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.magazine .inner .title h3 {
+    font-size: 60px;
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.magazine .inner .title p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.magazine .inner .list {
+    width: 75%;
+    display: flex;
+    height: 100%;
+}
+
+.magazine .inner .list>div {
+    width: calc(100% / 3);
+    height: 100%;
+    padding: 50px;
+    border-right: 1px solid #fff;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.magazine .inner .list>div:hover {
+    background-color: transparent;
+}
+
+.magazine .inner .list>div a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.7s;
+}
+
+.magazine .inner .list>div:hover a {
+    transform: translateY(-50px);
+}
+
+.magazine .inner .list>div a h4 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.magazine .inner .list>div a p {
+    font-size: 18px;
+}
+
+
+/* info */
+.info {
+    width: 1440px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info>div {
+    width: 45%;
+}
+
+.info>div .tit {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.info .notice dl {
+    /* 
+ flex이용하여 가로정렬
+ 양끝에 붙여서 정렬
+ 아래쪽으로 테두리 : 1px solid #ccc
+ 내부여백 : 위아래 25px 좌우0 
+ */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 25px 0;
+}
+
+.info .help .cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.info .help .cont .number p:first-of-type {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 25px 0;
+}
+
+.info .help .cont .number a {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.info .help .cont .number p {
+    line-height: 1.8;
+}
+
+.info .help .cont .guide a {
+    display: block;
+    margin-top: 10px;
+}
